@@ -26,7 +26,7 @@ public class Uso_finanzas {
 			System.out.println("Introduce el tipo de cambio");
 			cambioMoneda=entrada.nextDouble();
 			conversor=new Finanzas(cambioMoneda);
-			if(conversor.getMonedaTipo(tipoMoneda).equals("Dolar")) {
+		    if(conversor.getMonedaTipo(tipoMoneda).equals("Dolar")) {
 				System.out.println(conversor.dolaresToEuro(cambioMoneda));
 			}else{
 				System.out.println(conversor.euroToDolar(cambioMoneda));
