@@ -6,6 +6,11 @@ public class Peso {
 	
 	
 	//constructor
+	
+	//dentro de el pasamos el valor a Kilogrmaos y lo guardamos en peso dependiendo de la unidad que introduzcamos como parametros por eso las condiciones.
+	
+	// de esta manera hacemos 7 condiciones, ya que tenemos el Obgeto en kilogrmaos en el valor del constructor PESO independientemente de la unidad que introduzcamos.
+	
 	public Peso(double valor ,String unidad) {
 		peso = valor;
 				
@@ -58,6 +63,7 @@ public class Peso {
 			}
 			
 	//getPeso. Devuelve el peso en la medida que se pase como parámetro
+			//si es igual a cada una de las siglas efectua un calculo para acumularlo en alvaro y mostrarlo por pantalla
 			
 			
 			public double getPeso(String parametro) {

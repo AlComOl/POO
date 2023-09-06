@@ -1,39 +1,28 @@
 package poo;
 
-import javax.swing.*;
+public class Uso_coche {
 
-public class Uso_Coche {
-
-	public static void main(String[] args) {
-		Coche Audi =new Coche();//Instanciar una clase 
-		
-		
-		Audi.establece_color(JOptionPane.showInputDialog("Introduce color"));
-		
-		Audi.establece_peso(2000);
-		
-		Audi.establece_alto(100);
-		
-		Audi.dime_configuracion_asientos(JOptionPane.showInputDialog("Tiene asientos de cuero?"));
-
-		Audi.establece_climatizador(JOptionPane.showInputDialog("Tiene clinatizador?"));
-		
-		
-
-	System.out.println(Audi.establece_color());
-	System.out.println(Audi.dime_peso());
-	System.out.println(Audi.dime_alto());
-	
-	
-	System.out.println(Audi.dime_datos_generales());
-	
-	System.out.println(Audi.devuelve_asientos());
-	
-	System.out.println(Audi.dime_climatizador());
-	
-	System.out.println(Audi.dime_Peso_Total_Coche());
-	
-	System.out.println(Audi.dime_precio_coche());
+		public static void main(String[] args) {
+			
+			//Instacia del objeto Coche que llama al un constructor que la pasa lo parametros a traves del constructor
+			coche coche1 = new coche("Audi" ,"A3","Deportivo");
+			//Instacia del objeto Coche que llama al un constructor normal 
+			coche coche2 = new coche();
+			
+			
+			//coche1.setcoche("Mercedes", "C5", "Turismo");		
+			
+			//System.out.println(coche1.getCoche());	
+			
+			
+			//coche2.setcoche(null, null, null);
+			
+			//System.out.println(coche2.getCoche());
+			System.out.println("LLAMADA AL PRIMER CONSTRUCTOR");
+			System.out.println(coche1.getCoche());
+			
+			System.out.println("*************************************************************************************************");
+			System.out.println("LLAMADA AL SEGUNDO  CONSTRUCTOR");
+			System.out.println(coche2.getCoche());
 	}
-
 }
