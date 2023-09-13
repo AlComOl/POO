@@ -65,15 +65,16 @@ public class RestauranteMejicno {
 		
 		Scanner Entrada=new Scanner(System.in);
 		
-		
+		int opcion = -1;
 		
 		RestauranteMejicno restauranteIsrael = new RestauranteMejicno();
 		
 	  do {
 		System.out.println("  1 -> Ingresar productos en el Almacen "
 				+ "\n  2 -> Ver Stock Almacen  "
-				+ "\n  3 -> Ver cantidad de clientes que puedo antender con el Stock del almacen ");
-		int opcion=Entrada.nextInt();
+				+ "\n  3 -> Ver cantidad de clientes que puedo antender con el Stock del almacen "
+				+ "\n  0 -> Salir");
+		opcion=Entrada.nextInt();
 		switch (opcion) {
 		case 1:
 		
@@ -130,12 +131,15 @@ public class RestauranteMejicno {
 			break;
 		case 3:
 			System.out.println(restauranteIsrael.getComensales());
+			break;
+		case 0:
+			System.out.println("Adios");
 		default:
 			break;
 		
 			}
 		
-	  }while(true);
+	  }while(opcion != 0);
 	}
 }
 
